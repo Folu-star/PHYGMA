@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1400x600') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px 5%;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero .date {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.hero p {
+    opacity: 0.85;
+}
+
+.container {
+    padding: 40px 5%;
+}
+
+.category-row {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin: 10px 20px 5px;
+    color: #ff5a5f;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 5px 20px;
+}
+
+.card p {
+    margin: 5px 20px;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.author {
+    display: block;
+    font-size: 0.8rem;
+    margin: 10px 20px;
+    opacity: 0.6;
+}
+
+.more-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.more-btn button {
+    background: #fff;
+    color: #000;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.more-btn button:hover {
+    background: #ff5a5f;
+    color: #fff;
+}
+featured-image {
+  flex: 1;
+  position: relative;
+}
+
+.featured-image img {
+  width: 100%;
+  height: auto;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .blog-section,
+  .featured {
+    flex-direction: column;
+  }
+
+  .blog-card,
+  .topics,
+  .featured-image {
+    flex: 1 1 100%;
+  }
+}
+</style>
+<body>
+    <header class="header">
+        <div class="logo">VENCE.</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="date">29 Jun 2022</span>
+            <h1>I Like to Keep Things Simple to Appreciate the Details</h1>
+            <p>Many years ago, I worked for my parents who own a video production company.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="category-row">
+            <h2>Categories</h2>
+        </div>
+
+        <div class="grid">
+            <article class="card">
+                <img src="https://figma-free.com/wp-content/uploads/2023/02/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-2023-02-20-%D0%B2-22.16.01-1126x1536.png" alt="">
+                <span class="tag">CREATIVE</span>
+                <h3>Instagram artists with great photography skills</h3>
+                <p>Many years ago, I worked for my parents who own a video production company.</p>
+                <span class="author">By Peter Rowevision</span>
+            </article>
+
+            <article class="card">
+                <img src="https://figma-free.com/wp-content/uploads/2023/02/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-2023-02-20-%D0%B2-22.16.01-1126x1536.png" alt="">
+                <span class="tag">CREATIVE</span>
+                <h3>The 20 best creative & strong handmade of 2022</h3>
+                <p>Many years ago, I worked for my parents who own a video production company.</p>
+                <span class="author">By Peter Rowevision</span>
+            </article>
+
+            <article class="card">
+                <img src="https://figma-free.com/wp-content/uploads/2023/02/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-2023-02-20-%D0%B2-22.16.01-1126x1536.png" alt="">
+                <span class="tag">CREATIVE</span>
+                <h3>Apartamento at ten: A decade of celebrating the everyday</h3>
+                <p>Many years ago, I worked for my parents who own a video production company.</p>
+                <span class="author">By Peter Rowevision</span>
+            </article>
+
+            <article class="card">
+                <img src="https://figma-free.com/wp-content/uploads/2023/02/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-2023-02-20-%D0%B2-22.16.01-1126x1536.png" alt="">
+                <h3>Alessandro Novelli’s animation plays with ANDRE</h3>
+                <p>Many years ago, I worked for my parents who own a video production company.</p>
+                <span class="author">By Peter Rowevision</span>
+            </article>
+
+            <article class="card">
+                <img src="https://figma-free.com/wp-content/uploads/2023/02/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-2023-02-20-%D0%B2-22.16.01-1126x1536.png" alt="">
+                <h3>Aron Klein’s captivating images of the UDEA</h3>
+                <p>Many years ago, I worked for my parents who own a video production company.</p>
+                <span class="author">By Peter Rowevision</span>
+            </article>
+
+            <article class="card">
+                <img src="https://figma-free.com/wp-content/uploads/2023/02/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-2023-02-20-%D0%B2-22.16.01-1126x1536.png" alt="">
+                <h3>Renzo Patton combines design and nature</h3>
+                <p>Many years ago, I worked for my parents who own a video production company.</p>
+                <span class="author">By Peter Rowevision</span>
+            </article>
+        </div>
+
+        <div class="more-btn">
+            <button>More Articles</button>
+        </div>
+    </main><section class="featured">
+    <div class="topics">
+      <h2>Featured Topics</h2>
+      <ul>
+        <li>A beautiful solo trip to the Lake Baikal</li>
+        <li>Incredible architecture inspired by nature</li>
+        <li>Richard Norton photorealistic rendering as real photos</li>
+      </ul>
+    </div>
+    <div class="featured-image">
+      <img src="https://images.unsplash.com/photo-1601758003122-58e5f2b29c99" alt="Lake Mountain" />
+      <div class="image-text">20 unexpected destinations for your next trip</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025, All Rights Reserved | VENCE Studio</p>
+  </footer>
+
+</body>
+</html>
